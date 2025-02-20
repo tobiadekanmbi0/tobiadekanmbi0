@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Performance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- JavaScript Validation -->
+</head>
+<body>
+
+    <h1>Book a Performance</h1>
+
+    <form id="bookingForm" action="submit-form.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="event">Event Type:</label>
+        <select id="event" name="event">
+            <option value="church">Church Service</option>
+            <option value="party">Party</option>
+            <option value="burial">Burial Ceremony</option>
+        </select>
+
+        <label for="message">Additional Details:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit Request</button>
+    </form>
+
+</body>
+</html>
